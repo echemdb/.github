@@ -1,15 +1,17 @@
 ## Welcome to the echemDB
 
-The echemDB provides machine-readable 2D data from published figures and stores such data according to the [FAIR principles](https://www.go-fair.org/fair-principles/). We currently focus on [cyclic voltammograms](https://en.wikipedia.org/wiki/Cyclic_voltammetry) recorded for single crystal electrodes in contact with liquid electrolytes. The echemDB is an open-source project which is of equal interest for curious scientists, contributors, and developers. 
+Our [echemDB projects](https://www.echemdb.org) aim at creating, interacting and providing machine-readable 2D (or time series) data from experiments, computational results and published figures. These data are stored according to the [FAIR principles](https://www.go-fair.org/fair-principles/) using the [frictionless framework](https://framework.frictionlessdata.io/) and a [metadata standard](https://github.com/echemdb/metadata-schema) to describe the underlying data. To develop our tools we focus on data found in the field of electrochemistry. The base modules can, however, be modified to meet any other kind of time series data.
+The echemDB aims at creating open-source projects which are of equal interest for curious scientists, contributors, and developers.
+
+ and stores such data according to the [FAIR principles](https://www.go-fair.org/fair-principles/). We currently focus on [cyclic voltammograms](https://en.wikipedia.org/wiki/Cyclic_voltammetry) recorded for single crystal electrodes in contact with liquid electrolytes.
 
 The echemDB consists of:
-* A [public repository](https://github.com/echemdb/website/tree/main/literature) of data recovered from published articles.
-* The [svgdigitizer](https://echemdb.github.io/svgdigitizer) which digitizes plots in scientific publications from carefully prepared scalable vector graphics. An electrochemistry module offers convenience functionality, e.g., to reconstruct a time axis based on the scan rate, extract axis units, or reference potentials. A digittized figure can then be included in the public echemDB repository.
-* The [echemDB website](https://echemdb.github.io/website) which provides an overview of the data digitized by the community, including plots, and metadata.
-* The [echemdb module](https://echemdb.github.io/echemdb/) is a Python interface to search the echemDB repository. Conveniently, this allows direct comparison between published datasets and data acquired in the laboratory.
 
-## Contribution
+* The [svgdigitizer](https://echemdb.github.io/svgdigitizer) which digitizes plots in scientific publications from carefully prepared scalable vector graphics (SVG). The tool supports different kinds of plots and allows reconstruct a time axis based on the scan rate ot extract axis units. Additional modules offer convenience functionality to create frictionless datapackages for specfic types of plots, such as [cyclic voltammograms](https://en.wikipedia.org/wiki/Cyclic_voltammetry) found in electrochemistry.
+* The [unitpackage module](https://echemdb.github.io/unitpackage/) is a Python interface to create and interact with a collection of frictionless datapackges. Conveniently, this allows direct comparison between similar kinds of published datasets and data acquired in the laboratory.
+* The [echemDB website](https://www.echemdb.org) provides an overview on our activities and illustrates how datapackages provided by the community, including plots, and metadata can be [visualized in a web interface](https://www.echemdb.org).
+* The [autoag-metadata] allows recording metadata from a template during file creation, for example, upon recording data in the lab or saving any other file in your file system.
 
-Contributions are always welcome and do not necessarily require programming skills. Please leave us a message if you are interested in contributing to the echemDB ☺
+## Suggestions and Contributions
 
-You could get started by [digitizing some published data](https://echemdb.github.io/svgdigitizer/workflow.html) in your area of research or by extending any of the pages of the [echemDB website](https://echemdb.github.io/website/). If your interest is outside of cyclic voltammograms or electrochemistry, we would also be thrilled to hear about your ideas to extend these projects to other areas.
+Contributions are always welcome and do not necessarily require programming skills. Please [leave us a message](https://github.com/orgs/echemdb/discussions). We would also be thrilled to hear about your ideas to extend the echemDB projects to other areas. ☺
