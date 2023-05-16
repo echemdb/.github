@@ -7,7 +7,7 @@ The echemDB consists of:
 
 * The [svgdigitizer](https://echemdb.github.io/svgdigitizer) which digitizes plots in scientific publications from carefully prepared scalable vector graphics (SVG). The tool supports different kinds of plots and allows reconstruct a time axis based on the scan rate ot extract axis units. Additional modules offer convenience functionality to create frictionless datapackages for specfic types of plots, such as [cyclic voltammograms](https://en.wikipedia.org/wiki/Cyclic_voltammetry) found in electrochemistry.
 * The [unitpackage module](https://echemdb.github.io/unitpackage/) is a Python interface to create and interact with a collection of frictionless datapackges. Conveniently, this allows direct comparison between similar kinds of published datasets and data acquired in the laboratory.
-* The [echemDB website](https://www.echemdb.org) provides an overview on our activities and illustrates how datapackages provided by the community, including plots, and metadata can be [visualized in a web interface](https://www.echemdb.org).
+* The [echemDB website](https://www.echemdb.org) provides an overview on our activities and illustrates how datapackages provided by the community, including plots, and metadata can be [visualized in a web interface](https://www.echemdb.org/cv).
 * The [autoag-metadata] allows recording metadata from a template during file creation, for example, upon recording data in the lab or saving any other file in your file system.
 
 ## Suggestions and Contributions
